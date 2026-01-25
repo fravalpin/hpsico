@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Navbar, Nav, Container } from 'react-bootstrap'
+import logoImg from '../../assets/images/logo.png'
 
 const NavbarMenu = () => {
   const [expanded, setExpanded] = useState(false);
@@ -8,6 +9,12 @@ const NavbarMenu = () => {
     <Navbar expanded={expanded} expand="lg" sticky="top" className="bg-white">
       <Container>
         <Navbar.Brand href="#inicio" onClick={() => setExpanded(false)} className="fw-bold text-primary">
+          <img
+            src={logoImg}
+            height="30"
+            className="d-inline-block align-top me-2"
+            alt="Logo Ana Herrera"
+          />
           Ana Herrera
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={() => setExpanded(expanded ? false : "expanded")} />

@@ -1,6 +1,7 @@
 import React from 'react'
 import { Row, Col, Form, Button, Image } from 'react-bootstrap'
 import SectionWrapper from '../common/SectionWrapper'
+import contactImg from '../../assets/images/contact.png'
 
 const Contact = () => {
   const handleSubmit = (e) => {
@@ -14,12 +15,13 @@ const Contact = () => {
       <Row className="align-items-center">
         <Col md={6} className="text-center mb-4 mb-md-0">
           <Image 
-            src="https://placehold.co/600x600/f2f2f2/516b8c?text=Contacto" 
-            alt="Contacto y cercanía" 
+            src={contactImg}
+            alt="Ilustración de contacto" 
             fluid 
             rounded 
             className="shadow-sm"
             loading="lazy"
+            width="500px"
           />
         </Col>
 

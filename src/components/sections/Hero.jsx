@@ -1,6 +1,7 @@
 import React from 'react'
 import { Row, Col, Button, Image } from 'react-bootstrap'
 import SectionWrapper from '../common/SectionWrapper'
+import heroImg from '../../assets/images/ana_psicologa.jpg'
 
 const Hero = () => {
   return (
@@ -32,11 +33,12 @@ const Hero = () => {
         
         <Col md={6} className="text-center mb-4 mb-md-0">
           <Image 
-            src="https://placehold.co/600x600/f2f2f2/516b8c?text=Espacio+Calma" 
-            alt="Espacio de consulta tranquilo y natural" 
+            src={heroImg}
+            alt="Ana Herrera psicóloga" 
             fluid 
             rounded 
             className="shadow-sm"
+            width="300px"
           />
         </Col>
       </Row>
