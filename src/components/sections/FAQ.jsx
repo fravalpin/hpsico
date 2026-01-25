@@ -1,6 +1,7 @@
 import React from 'react'
 import { Row, Col, Accordion, Image } from 'react-bootstrap'
 import SectionWrapper from '../common/SectionWrapper'
+import logoImg from '../../assets/images/logo.png'
 
 const FAQ = () => {
   return (
@@ -8,11 +9,9 @@ const FAQ = () => {
       <Row className="align-items-center">
         <Col md={6} className="order-md-last text-center mb-4 mb-md-0">
           <Image 
-            src="https://placehold.co/600x600/f2f2f2/516b8c?text=Tranquilidad" 
-            alt="Ambiente tranquilo" 
+            src={logoImg}
+            alt="Logo Ana Herrera" 
             fluid 
-            rounded 
-            className="shadow-sm"
             loading="lazy"
           />
         </Col>

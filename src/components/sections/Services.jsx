@@ -1,6 +1,7 @@
 import React from 'react'
 import { Row, Col, Image, Card } from 'react-bootstrap'
 import SectionWrapper from '../common/SectionWrapper'
+import servicesImg from '../../assets/images/services.png'
 
 const Services = () => {
   return (
@@ -8,12 +9,13 @@ const Services = () => {
       <Row className="align-items-center">
         <Col md={6} className="text-center mb-4 mb-md-0">
           <Image 
-            src="https://placehold.co/600x600/f2f2f2/516b8c?text=Acompañamiento" 
-            alt="Concepto de bienestar y acompañamiento" 
+            src={servicesImg} 
+            alt="Ilustración de servicios de terapia" 
             fluid 
             rounded 
             className="shadow-sm"
             loading="lazy"
+            width="500px"
           />
         </Col>
         
