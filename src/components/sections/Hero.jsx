@@ -6,7 +6,7 @@ import heroImg from '../../assets/images/ana_psicologa.jpg'
 const Hero = () => {
   return (
     <SectionWrapper id="inicio">
-      <Row className="align-items-center flex-column-reverse flex-md-row">
+      <Row className="align-items-center flex-md-row">
         <Col md={6} className="mt-4 mt-md-0">
           <h1 className="display-4 mb-4">Bienvenidx a este espacio!</h1>
           

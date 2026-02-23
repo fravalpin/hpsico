@@ -7,7 +7,7 @@ const AboutMe = () => {
   return (
     <SectionWrapper id="sobre-mi">
       <Row className="align-items-center">
-        <Col md={6} className="text-center mb-4 mb-md-0 order-md-last">
+        <Col md={6} className="text-center mb-4 mb-md-0 order-2 order-md-last">
            <Image 
             src={aboutImg}
             alt="Retrato de Ana Herrera" 
@@ -19,7 +19,7 @@ const AboutMe = () => {
           />
         </Col>
         
-        <Col md={6} className="order-md-first">
+        <Col md={6} className="order-1 order-md-first">
           <h2 className="mb-4">💫 Sobre mí</h2>
           
           <div className="mb-4">
