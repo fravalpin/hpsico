@@ -8,13 +8,14 @@ const NavbarMenu = () => {
   return (
     <Navbar expanded={expanded} expand="lg" sticky="top" className="bg-white">
       <Container>
-        <Navbar.Brand href="#inicio" onClick={() => setExpanded(false)} className="fw-bold text-primary">
-          <img
-            src={logoImg}
-            height="30"
-            className="d-inline-block align-top me-2"
-            alt="Logo Ana Herrera"
-          />
+        <Navbar.Brand href="#inicio" onClick={() => setExpanded(false)} className="fw-bold text-primary d-flex align-items-center">
+          <div style={{ height: '30px', overflow: 'hidden', display: 'flex', alignItems: 'center' }} className="me-2">
+            <img
+              src={logoImg}
+              style={{ height: '200%', objectFit: 'contain' }}
+              alt="Logo Ana Herrera"
+            />
+          </div>
           Ana Herrera
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={() => setExpanded(expanded ? false : "expanded")} />

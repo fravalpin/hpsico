@@ -13,7 +13,7 @@ const Contact = () => {
   return (
     <SectionWrapper id="contacto">
       <Row className="align-items-center">
-        <Col md={6} className="text-center mb-4 mb-md-0">
+        <Col md={6} className="text-center mb-4 mb-md-0 order-2 order-md-1">
           <Image 
             src={contactImg}
             alt="Ilustración de contacto" 
@@ -25,7 +25,7 @@ const Contact = () => {
           />
         </Col>
 
-        <Col md={6}>
+        <Col md={6} className="order-1 order-md-2">
           <h2 className="mb-4">📞 Contacto</h2>
           
           <div className="mb-4">

@@ -7,7 +7,7 @@ const Services = () => {
   return (
     <SectionWrapper id="servicios">
       <Row className="align-items-center">
-        <Col md={6} className="text-center mb-4 mb-md-0">
+        <Col md={6} className="text-center mb-4 mb-md-0 order-2 order-md-1">
           <Image 
             src={servicesImg} 
             alt="Ilustración de servicios de terapia" 
@@ -19,7 +19,7 @@ const Services = () => {
           />
         </Col>
         
-        <Col md={6}>
+        <Col md={6} className="order-1 order-md-2">
           <h2 className="mb-4">🌱 Servicios / Terapias</h2>
           
           <p className="lead mb-4">
