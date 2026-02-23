@@ -7,6 +7,7 @@ import Services from './components/sections/Services'
 import FAQ from './components/sections/FAQ'
 import Contact from './components/sections/Contact'
 import Footer from './components/common/Footer'
+import ScrollToTop from './components/common/ScrollToTop'
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Contact />
       </main>
       <Footer />
+      <ScrollToTop />
     </>
   )
 }
