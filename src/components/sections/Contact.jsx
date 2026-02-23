@@ -31,12 +31,14 @@ const Contact = () => {
           <div className="mb-4">
             <p>Si sientes que es momento de empezar tu proceso o simplemente quieres más información, puedes escribirme a:</p>
             
-            <ul className="list-unstyled mb-4">
-              <li className="mb-2">📧 <a href="mailto:anaherrerapsicologia@gmail.com" className="text-decoration-none text-body">anaherrerapsicologia@gmail.com</a></li>
-              <li className="mb-2">📱 <a href="tel:+34623755502" className="text-decoration-none text-body">623755502</a></li>
-              <li className="mb-2">📍 O Rosal</li>
-              <li className="mb-2">💻 Online</li>
-            </ul>
+            <div className="bg-white p-4 rounded shadow-sm border-start border-4 border-primary mb-4">
+              <ul className="list-unstyled mb-0">
+                <li className="mb-2">📧 <a href="mailto:anaherrerapsicologia@gmail.com" className="text-decoration-none text-body">anaherrerapsicologia@gmail.com</a></li>
+                <li className="mb-2">📱 <a href="tel:+34623755502" className="text-decoration-none text-body">623755502</a></li>
+                <li className="mb-2">📍 O Rosal</li>
+                <li className="mb-0">💻 Online</li>
+              </ul>
+            </div>
             
             <p>También puedes dejarme un mensaje a través del formulario de contacto. Te responderé lo antes posible :)</p>
           </div>
