@@ -1,20 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap');
+
 :root {
-  --bg-color: #f2f2f2;
-  --primary-color: #516b8c;
-  --primary-hover: #6a84a6;
-  --accent-color: #8fa4bf;
-  --text-color: #0d0d0d;
+  /* Palette: Professional, Calm, Trustworthy */
+  --bg-color: #ffffff;
+  --bg-alt: #f4f6f8; /* Cool light gray/blueish */
+  --primary-color: #516b8c; /* Original Logo Blue */
+  --primary-hover: #3e526e; /* Darker shade for hover */
+  --accent-color: #bfa688; /* Soft Taupe/Sand - Complements the blue nicely */
+  --text-color: #2c3e50; /* Dark Blue/Gray text */
+  --text-muted: #607d8b;
+  --white: #ffffff;
+  
+  /* Spacing */
+  --section-padding: 5rem 0;
+  
+  /* Shadows */
+  --shadow-sm: 0 2px 4px rgba(0,0,0,0.05);
+  --shadow-md: 0 4px 6px rgba(0,0,0,0.1);
+  --shadow-lg: 0 10px 15px rgba(0,0,0,0.1);
 }
 
 body {
   background-color: var(--bg-color);
   color: var(--text-color);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: 'Lato', sans-serif;
+  line-height: 1.6;
 }
 
 h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
   color: var(--primary-color);
   font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
 }
 
 /* Smooth Scrolling */
@@ -22,42 +44,127 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Custom Buttons */
+/* Section Styling */
+section {
+  padding: var(--section-padding);
+  position: relative;
+  overflow: hidden;
+}
+
+section:nth-child(even) {
+  background-color: var(--bg-alt);
+}
+
+/* Button Customization */
 .btn-primary {
   background-color: var(--primary-color);
   border-color: var(--primary-color);
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
   background-color: var(--primary-hover) !important;
   border-color: var(--primary-hover) !important;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.btn-outline-primary {
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+/* Navbar Customization */
+.navbar {
+  transition: all 0.3s ease;
+  padding: 1rem 0;
+}
+
+.navbar.scrolled {
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  box-shadow: var(--shadow-sm);
+  padding: 0.5rem 0;
+}
+
+.nav-link {
+  color: var(--text-color) !important;
+  font-weight: 500;
+  margin: 0 0.5rem;
+  position: relative;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--accent-color);
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after, .nav-link.active::after {
+  width: 100%;
+}
+
+.navbar-brand {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  color: var(--primary-color) !important;
+  font-size: 1.5rem;
+}
+
+/* Card Styling */
+.card-custom {
+  background: var(--white);
+  border: none;
+  border-radius: 12px;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+  padding: 2rem;
+}
+
+.card-custom:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.icon-box {
+  font-size: 2.5rem;
+  color: var(--accent-color);
+  margin-bottom: 1rem;
+}
+
+/* Images */
+img.rounded {
+  border-radius: 12px !important;
+}
+
+/* Utility */
+.text-accent {
+  color: var(--accent-color) !important;
+}
+
+.bg-accent-light {
+  background-color: rgba(212, 163, 115, 0.1);
 }
 
 .text-primary {
   color: var(--primary-color) !important;
 }
 
-/* Section Padding */
-section {
-  padding: 5rem 0;
-}
-
-/* Navbar Customization */
-.navbar {
-  background-color: white; /* Clean look or use var(--bg-color) if preferred */
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-}
-
-.navbar-light .navbar-nav .nav-link {
-  color: var(--primary-color);
-  font-weight: 500;
-}
-
-.border-primary {
-  border-color: var(--primary-color) !important;
-}
-
-.navbar-light .navbar-nav .nav-link.active,
-.navbar-light .navbar-nav .nav-link:hover {
-  color: var(--primary-color);
+.bg-primary {
+  background-color: var(--primary-color) !important;
 }
