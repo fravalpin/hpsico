@@ -1,6 +1,6 @@
 import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
-import { FaInstagram, FaLinkedin, FaFacebook } from 'react-icons/fa'
+import { FaInstagram, FaLinkedin } from 'react-icons/fa'
 
 const Footer = () => {
   return (
@@ -18,9 +18,8 @@ const Footer = () => {
           <Col md={4} className="text-center">
              <h6 className="text-uppercase mb-3 fw-bold ls-1 text-accent">Redes Sociales</h6>
              <div className="d-flex justify-content-center gap-3">
-               <a href="#" className="text-white opacity-75 hover-opacity-100 transition"><FaInstagram size={24} /></a>
-               <a href="#" className="text-white opacity-75 hover-opacity-100 transition"><FaLinkedin size={24} /></a>
-               <a href="#" className="text-white opacity-75 hover-opacity-100 transition"><FaFacebook size={24} /></a>
+               <a href="https://www.instagram.com/anaherrera_psico/" className="text-white opacity-75 hover-opacity-100 transition" target="_blank" rel="noopener noreferrer"><FaInstagram size={24} /></a>
+               <a href="https://www.linkedin.com/in/ana-herrera-rubio-62983b165/" className="text-white opacity-75 hover-opacity-100 transition" target="_blank" rel="noopener noreferrer"><FaLinkedin size={24} /></a>
              </div>
           </Col>
 
