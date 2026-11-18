@@ -1,8 +1,7 @@
 import React from 'react'
-import { Row, Col, Form, Button, Image, Container } from 'react-bootstrap'
+import { Row, Col, Form, Button, Container } from 'react-bootstrap'
 import { motion } from 'framer-motion'
 import { FaWhatsapp, FaEnvelope, FaPhoneAlt, FaMapMarkerAlt, FaLaptop, FaPaperPlane } from 'react-icons/fa'
-import contactImg from '../../assets/images/contact.png'
 
 const Contact = () => {
   const handleSubmit = (e) => {
@@ -78,16 +77,6 @@ const Contact = () => {
                   <FaWhatsapp size={20} />
                   Contactar por WhatsApp
                 </Button>
-              </div>
-              
-              <div className="mt-4 text-center">
-                <Image 
-                  src={contactImg} 
-                  fluid 
-                  rounded 
-                  style={{ maxHeight: '200px', objectFit: 'contain' }}
-                  alt="Ilustración contacto"
-                />
               </div>
             </motion.div>
           </Col>

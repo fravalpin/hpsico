@@ -92,7 +92,7 @@ const Services = () => {
             <Col md={8}>
               <h4 className="fw-bold text-primary mb-2">Modalidades Flexibles</h4>
               <p className="mb-0 text-muted">
-                Sesiones <strong>presenciales</strong> en consulta o <strong>online</strong> para tu comodidad. 
+                Sesiones <strong>presenciales</strong> en consulta u <strong>online</strong> para tu comodidad. 
                 También valoro intervenciones a domicilio en la zona del Baixo Miño.
               </p>
             </Col>

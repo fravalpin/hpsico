@@ -32,7 +32,7 @@ const NavbarMenu = () => {
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
-            style={{ height: '40px', overflow: 'hidden', display: 'flex', alignItems: 'center' }} 
+            style={{ height: '56px', overflow: 'hidden', display: 'flex', alignItems: 'center' }} 
             className="me-2"
           >
             <img
@@ -45,8 +45,19 @@ const NavbarMenu = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.2, duration: 0.5 }}
+            className="d-flex flex-column lh-1"
           >
-            Ana Herrera
+            <span>Ana Herrera</span>
+            <span
+              style={{
+                color: 'var(--accent-color)',
+                fontSize: '0.6em',
+                letterSpacing: '0.25em',
+                marginTop: '4px'
+              }}
+            >
+              PSICOLOGÍA
+            </span>
           </motion.span>
         </Navbar.Brand>
         
