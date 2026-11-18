@@ -57,11 +57,11 @@ const AboutMe = () => {
 
                 <div className="text-body-secondary mb-4">
                   <p>
-                    Desde que empecé mi camino como psicóloga, he tenido claro que lo importante no es encajar a las personas en una etiqueta diagnóstica, sino escuchar y comprender su historia.
+                    Desde que empecé mi camino como psicóloga, he tenido claro que lo importante no es encajar a las personas en una etiqueta diagnóstica, sino escuchar y comprender su historia para entender qué necesitan.
                   </p>
                   
                   <p>
-                    Mi enfoque es <strong>integrador</strong>. Combino mi base cognitiva-conductual con formación en trauma, apego y terapias de tercera generación. Esto me permite adaptarme a tus necesidades, porque cada proceso es único.
+                    Mi enfoque es <strong>integrador</strong>. Combino mi base cognitiva-conductual con formación en trauma, apego y terapias de tercera generación. Esto me permite adaptarme a las necesidades de cada persona, porque cada proceso es único.
                   </p>
                   
                   <p>
