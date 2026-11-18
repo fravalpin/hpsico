@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://anaherrerapsicologia.com/sitemap.xml
