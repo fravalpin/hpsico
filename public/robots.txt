@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://fravalpin.github.io/hpsico/sitemap.xml
+Sitemap: https://anaherrerapsicologia.com/sitemap.xml
