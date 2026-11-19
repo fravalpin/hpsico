@@ -22,16 +22,16 @@ const Hero = () => {
             >
               <div className="position-relative d-inline-block">
                 <div 
-                  className="position-absolute w-100 h-100 rounded-circle bg-accent-light" 
-                  style={{ top: '20px', left: '-20px', zIndex: 0 }}
+                  className="position-absolute w-100 h-100 rounded-circle bg-accent-light hero-img-backdrop" 
+                  style={{ zIndex: 0 }}
                 ></div>
                 <Image 
                   src={heroImg}
                   alt="Ana Herrera psicóloga" 
                   fluid 
                   roundedCircle
-                  className="shadow-lg position-relative"
-                  style={{ zIndex: 1, border: '5px solid white', maxWidth: '350px' }}
+                  className="shadow-lg position-relative hero-img"
+                  style={{ zIndex: 1, border: '5px solid white' }}
                 />
               </div>
             </motion.div>
@@ -48,7 +48,7 @@ const Hero = () => {
               </h1>
               
               <p className="lead mb-4 text-muted">
-                Soy Ana, psicóloga sanitaria. Te acompaño a reencontrar el equilibrio y gestionar tus emociones en un entorno seguro y sin juicios.
+                Soy Ana, psicóloga general sanitaria. Te acompaño a reencontrar el equilibrio y gestionar tus emociones en un entorno seguro y sin juicios.
               </p>
 
               <div className="d-flex gap-3 flex-wrap">
